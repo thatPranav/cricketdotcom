@@ -1,7 +1,6 @@
 import MatchCard from "./MatchCard.component";
 
 const SeriesName = ({ series }) => {
-  console.log(series);
   return (
     <>
       <div className="bg-gray-700 text-white h-9 flex items-center justify-between p-2">
