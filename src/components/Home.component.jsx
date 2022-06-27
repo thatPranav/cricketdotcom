@@ -109,7 +109,7 @@ const Home = () => {
           </div>
         </div>
         {data.newSchedule.map((series) => {
-          return <SeriesName series={series} />;
+          return <SeriesName key={series.seriesID} series={series} />;
         })}
       </div>
     </>

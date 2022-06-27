@@ -15,7 +15,7 @@ const SeriesName = ({ series }) => {
       </div>
       <div className="flex gap-3 overflow-auto">
         {series.matches.map((match) => {
-          return <MatchCard match={match} />;
+          return <MatchCard key={match.matchID} match={match} />;
         })}
       </div>
     </>
