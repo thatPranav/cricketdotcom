@@ -91,13 +91,17 @@ const Home = () => {
               All
             </div>
             <div
-              className="border rounded-full px-2 text-center cursor-pointer"
+              className={`border rounded-full px-2 text-center cursor-pointer ${
+                type === "International" && "border-green-700"
+              }`}
               onClick={() => setType("International")}
             >
               International
             </div>
             <div
-              className="border rounded-full px-2 text-center cursor-pointer"
+              className={`border rounded-full px-2 text-center cursor-pointer ${
+                type === "Domestic" && "border-green-700"
+              }`}
               onClick={() => setType("Domestic")}
             >
               Domestic
